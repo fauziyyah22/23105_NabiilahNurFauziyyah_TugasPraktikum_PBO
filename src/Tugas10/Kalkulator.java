@@ -1,9 +1,10 @@
-package Tugas8;
+package Tugas10;
+
+import Tugas8.*;
 
 public class Kalkulator extends javax.swing.JFrame {
     String angka;
     double total, angka1, angka2;
-    int pilih;
     
     public Kalkulator() {
         initComponents();   //Menginialisasi komponen GUI
@@ -16,6 +17,8 @@ public class Kalkulator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -42,8 +45,16 @@ public class Kalkulator extends javax.swing.JFrame {
         btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(480, 333));
 
-        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setPreferredSize(new java.awt.Dimension(480, 333));
+
+        jLabel1.setFont(new java.awt.Font("Algerian", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 153, 255));
+        jLabel1.setText("KALKULATOR PINKEU");
+
+        jPanel1.setBackground(new java.awt.Color(255, 204, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -316,30 +327,50 @@ public class Kalkulator extends javax.swing.JFrame {
                 .addGap(61, 61, 61))
         );
 
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(53, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGap(93, 93, 93))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(52, 52, 52))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(40, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -348,106 +379,90 @@ public class Kalkulator extends javax.swing.JFrame {
     //Tombol Tambah (+)
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
-        //Jika ada angka yang diinput
-        if (!angka.isEmpty()) {
-            angka1 = Double.parseDouble(angka); //Konversi input angka menjadi tipe double
-            jTextField1.setText("+");           //Tampilkan simbol tambah di layar
-            angka = "";                         //Reset variabel angka untuk menerima input berikutnya
-            pilih = 1;                          //Menandakan operasi penjumlahan                        
-        }
+        angka = jTextField1.getText() + " + ";
+        jTextField1.setText(angka);
     }//GEN-LAST:event_btnTambahActionPerformed
     
     //Tombol Kurang (-)
     private void btnKurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKurangActionPerformed
         // TODO add your handling code here:
-        if (!angka.isEmpty()) {
-            angka1 = Double.parseDouble(angka); 
-            jTextField1.setText("-");
-            angka = "";
-            pilih = 2;
-        }
+        angka = jTextField1.getText() + " - ";
+        jTextField1.setText(angka);
     }//GEN-LAST:event_btnKurangActionPerformed
     
     //Tombol Kali (*)
     private void btnKaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKaliActionPerformed
         // TODO add your handling code here:
-        if (!angka.isEmpty()) {
-            angka1 = Double.parseDouble(angka);
-            jTextField1.setText("*");
-            angka = "";
-            pilih = 3;
-        }
+        angka = jTextField1.getText() + " x ";
+        jTextField1.setText(angka);
     }//GEN-LAST:event_btnKaliActionPerformed
 
     //Tombol Bagi (/)
     private void btnBagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBagiActionPerformed
         // TODO add your handling code here:
-        if (!angka.isEmpty()) {
-            angka1 = Double.parseDouble(angka);
-            jTextField1.setText("/");
-            angka = "";
-            pilih = 4;
-        }
+        angka = jTextField1.getText() + " / ";
+        jTextField1.setText(angka);
     }//GEN-LAST:event_btnBagiActionPerformed
 
     //Tombol Sama dengan (=) untuk hasil dari pengoperasian
     private void btnSamadenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSamadenganActionPerformed
         // TODO add your handling code here:
-        angka2 = Double.parseDouble(angka); //Konversi input angka kedua
-        switch(pilih){
-            case 1 ->{  //Operasi Penjumlahan
-                total = angka1 + angka2;        //Hitung total
-                angka = Double.toString(total); //Konversi hasil ke String
-                jTextField1.setText(angka);     //Tampilkan hasil
-            } 
-            case 2 ->{  //Operasi Pengurangan
-                total = angka1 - angka2;
-                angka = Double.toString(total);
-                jTextField1.setText(angka);
-            } 
-            case 3 ->{  //Operasi Perkalian
-                total = angka1 * angka2;
-                angka = Double.toString(total);
-                jTextField1.setText(angka);
-            } 
-            case 4 ->{  //Operasi Pembagian
-                if (angka2 != 0){   //Cek jika angka kedua tidak nol
-                    total = angka1 / angka2;    //Hitung total
-                    angka = Double.toString(total);
-                    jTextField1.setText(angka);
-                } else {
-                    jTextField1.setText("Error");   //Tampilkan error jika pembagian dengan nol
+        String inputText = jTextField1.getText().trim();
+
+        if (inputText.endsWith("%")) {
+            double angka = Double.parseDouble(inputText.substring(0, inputText.length() - 1).trim());
+            total = angka / 100.0;
+        } else if (inputText.contains(" ")) {
+            int operatorIndex = inputText.indexOf(" ");
+            String operator = inputText.substring(operatorIndex + 1, operatorIndex + 2);
+            angka1 = Double.parseDouble(inputText.substring(0, operatorIndex).trim());
+            int angka2start = operatorIndex + 2;
+            String angka2String = inputText.substring(angka2start).trim();
+
+            if (angka2String.endsWith("%")) {
+                angka2 = Double.parseDouble(angka2String.substring(0, angka2String.length() - 1).trim()) / 100.0;
+            } else {
+                angka2 = Double.parseDouble(angka2String);
+            }
+
+            switch (operator) {
+                case "+" -> total = angka1 + angka2;
+                case "-" -> total = angka1 - angka2;
+                case "*" -> total = angka1 * angka2;
+                case "/" -> {
+                    if (angka2 == 0) {
+                        jTextField1.setText("Error: Pembagian dengan nol");
+                        return;
+                    }
+                    total = angka1 / angka2;
+                }
+                case "%" -> total = (angka1 * angka2) / 100.0;
+                default -> {
+                    jTextField1.setText("Operator tidak valid");
+                    return;
                 }
             }
+        } else {
+            total = Double.parseDouble(inputText);
         }
+        jTextField1.setText(String.valueOf(total));
     }//GEN-LAST:event_btnSamadenganActionPerformed
 
     //Tombol Persen (%)
     private void btnPersenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersenActionPerformed
         // TODO add your handling code here:
-        angka2 = Double.parseDouble(angka); //Konversi input angka kedua
-        total = angka2/100; //Hitung persen
-        angka = Double.toString(total); //Konversi hasil ke String
-        jTextField1.setText(angka); //Tampilkakn hasil
+        angka = jTextField1.getText() + " % ";
+        jTextField1.setText(angka);
     }//GEN-LAST:event_btnPersenActionPerformed
 
     //Tombol Backspace (B) untuk menghapus satu karakter terakhir
     private void btnBackspaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackspaceActionPerformed
         // TODO add your handling code here:
-        if (!angka.isEmpty()){  //Jika ada angka yang diinput
-            angka = angka.substring(0, angka.length() - 1); //Hapus karakter terakhir
-            jTextField1.setText(angka); //Tampilkan angka yang tersisa
-        } else {    //Jika operator ditampilkan
-            String display = jTextField1.getText();
-            if (!display.isEmpty()){
-                char lastChar = display.charAt(display.length() - 1);  //Cek karakter terakhir
-                // Jika karakter terakhir adalah operator, hapus operator dan tampilkan angka1
-                if (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/') {                    jTextField1.setText(Double.toString(angka1));
-                    angka = Double.toString(angka1);
-                    pilih = 0;  //Reset pilihan operasi
-                }
-            }    
+        String currentText = jTextField1.getText();
+        if (currentText.length() > 0) {
+            currentText = currentText.substring(0, currentText.length() - 1);
         }
+        jTextField1.setText(currentText);
     }//GEN-LAST:event_btnBackspaceActionPerformed
 
     //Tombo Exit (E) untuk keluar dari aplikasi
@@ -466,11 +481,7 @@ public class Kalkulator extends javax.swing.JFrame {
     //Tombol hapus untuk reset semua
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
         // TODO add your handling code here:
-        jTextField1.setText("");   //Kosongkan layarr
-        angka1 = 0; //Reset angka1
-        angka2 = 0; //Reset angka2
-        total = 0;  //Reset total
-        angka = ""; //Reset input angka
+        jTextField1.setText("");
     }//GEN-LAST:event_btnHapusActionPerformed
     
     //Tombol Koma (.)
@@ -563,6 +574,7 @@ public class Kalkulator extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Kalkulator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -593,9 +605,11 @@ public class Kalkulator extends javax.swing.JFrame {
     private javax.swing.JButton btnPersen;
     private javax.swing.JButton btnSamadengan;
     private javax.swing.JButton btnTambah;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
